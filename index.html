@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | MonoSpace</title>
+    <title>Unity WebGL Player | MiniSpace</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MonoSpace</div>
+        <div id="unity-build-title">MiniSpace</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/newminispacetest.loader.js";
+      var loaderUrl = buildUrl + "/test3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/newminispacetest.data.gz",
-        frameworkUrl: buildUrl + "/newminispacetest.framework.js.gz",
-        codeUrl: buildUrl + "/newminispacetest.wasm.gz",
+        dataUrl: buildUrl + "/test3.data.unityweb",
+        frameworkUrl: buildUrl + "/test3.framework.js.unityweb",
+        codeUrl: buildUrl + "/test3.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Spettro Games",
-        productName: "MonoSpace",
-        productVersion: "Tb7",
+        companyName: "N7 Monoteam",
+        productName: "MiniSpace",
+        productVersion: "DEMO",
       };
 
       var container = document.querySelector("#unity-container");
@@ -65,7 +65,7 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      canvas.style.background = "url('" + buildUrl + "/newminispacetest.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/test3.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
